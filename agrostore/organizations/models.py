@@ -1,3 +1,23 @@
 from django.db import models
 
-# Create your models here.
+class OrganizationalUnit(models.Model):
+    name = models.CharField(max_length=30)
+    description = models.TextField(null=True, blank=True)
+
+    class Meta:
+        abstract = True
+
+class Cooperative(OrganizationalUnit):
+
+    def __str__(self):
+        return self.name
+
+class Farmer(OrganizationalUnit):
+
+    def __str__(self):
+        return self.name
+
+class Distributor(OrganizationalUnit):
+
+    def __str__(self):
+        return self.name
