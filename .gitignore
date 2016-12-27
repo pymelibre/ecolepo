@@ -90,3 +90,6 @@ ENV/
 
 # Database
 agrostore/db.sqlite3
+
+# Settings secret
+agrostore/settings_secret.py
