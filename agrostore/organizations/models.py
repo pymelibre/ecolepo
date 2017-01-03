@@ -13,6 +13,7 @@ class Cooperative(OrganizationalUnit):
         return self.name
 
 class Farmer(OrganizationalUnit):
+    cooperatives = models.ManyToManyField(Cooperative, blank=True, related_name='farmers')
 
     def __str__(self):
         return self.name

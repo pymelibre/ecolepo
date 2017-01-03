@@ -1,3 +1,10 @@
 from django.contrib import admin
+from .models import (
+    Cooperative,
+    Farmer,
+    Distributor
+)
 
-# Register your models here.
+admin.site.register(Cooperative)
+admin.site.register(Farmer)
+admin.site.register(Distributor)

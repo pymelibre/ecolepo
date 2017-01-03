@@ -92,4 +92,7 @@ ENV/
 agrostore/db.sqlite3
 
 # Settings secret
-agrostore/settings_secret.py
+*/*/settings_secret.py
+
+# Apps migrations
+*/*/migrations/*
