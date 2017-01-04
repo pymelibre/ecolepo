@@ -1,3 +1,35 @@
+body{
+  font-family: 'Cantarell', sans-serif;
+}
+
+.no-margin-bottom{
+  margin-bottom: 0;
+}
+
+.justify{
+  text-align: justify;
+}
+
+.center{
+  text-align: center;
+}
+
+.pull-left{
+  float: left;
+}
+
+.pull-right{
+  float: right;
+}
+
+.spaced{
+  padding: 10rem 0;
+}
+
+.hero{
+  @extend .spaced;
+}
+
 nav.navigation{
   padding: 1.2rem 0;
   background: #f3f3f3;
@@ -5,19 +37,39 @@ nav.navigation{
   font-family: 'Fira Sans', sans-serif;
 
   .navigation-list{
-      float: right;
-      list-style: none;
+    float: right;
+    list-style: none;
 
-      .navigation-item{
-        float: left;
-        margin-left: 2rem;
-        text-transform: uppercase;
-        letter-spacing: -.2px;
+    .navigation-item{
+      float: left;
+      margin-left: 2rem;
+      text-transform: uppercase;
+      letter-spacing: -.2px;
 
-        &:hover{
-        }
+      &:hover{
       }
+    }
 
   }
 
+}
+
+.timeline{
+  .timeline-item{
+    border: .1rem solid black;
+    border-radius: .4rem;
+
+    div{
+      padding: 0.2rem 1rem;
+      &.timeline-header{
+        border-bottom: .1rem solid black;
+      }
+      &.timeline-footer{
+        border-top: .1rem solid black;
+      }
+    }
+
+
+
+  }
 }
