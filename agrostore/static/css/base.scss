@@ -1,0 +1,23 @@
+nav.navigation{
+  padding: 1.2rem 0;
+  background: #f3f3f3;
+  border-bottom: 2px solid black;
+  font-family: 'Fira Sans', sans-serif;
+
+  .navigation-list{
+      float: right;
+      list-style: none;
+
+      .navigation-item{
+        float: left;
+        margin-left: 2rem;
+        text-transform: uppercase;
+        letter-spacing: -.2px;
+
+        &:hover{
+        }
+      }
+
+  }
+
+}
