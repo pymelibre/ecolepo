@@ -2,6 +2,11 @@ body{
   font-family: 'Cantarell', sans-serif;
 }
 
+.full-width{
+  width: 100%;
+  height: auto;
+}
+
 .no-margin-bottom{
   margin-bottom: 0;
 }
@@ -28,6 +33,15 @@ body{
 
 .hero{
   @extend .spaced;
+}
+
+.cooperative{
+  .rating{
+    width: 100%;
+    clear: both;
+    float: right;
+    text-align: right;
+  }
 }
 
 nav.navigation{

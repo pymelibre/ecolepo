@@ -1,5 +1,7 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
 {% block content %}
 <section class="container hero" id="hero">
   <div class="row">
@@ -7,8 +9,6 @@
       <h1>
         AWESOME TEXT HERE
       </h1>
-    </div>
-    <div class="column column-50">
       <p>
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
       </p>
@@ -16,51 +16,82 @@
         <a class="button" href="#">Goto action</a>
       </p>
     </div>
+    <div class="column column-50">
+      <img class="full-width" src="{% static 'img/main.svg' %}" />
+    </div>
   </div>
 </section>
 
 <section class="container" id="cooperatives">
   <div class="row">
-    <div class="column">
+    <div class="column cooperative">
       <strong>
         ONE
       </strong>
       <p class="no-margin-bottom justify">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
+      <span class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+        <i class="fa fa-star-o"></i>
+      </span>
       <a href="#" class="pull-right">
         view more
       </a>
     </div>
-    <div class="column">
+    <div class="column cooperative">
       <strong>
         TWO
       </strong>
       <p class="no-margin-bottom justify">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
+      <span class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-o"></i>
+      </span>
       <a href="#" class="pull-right">
         view more
       </a>
     </div>
-    <div class="column">
+    <div class="column cooperative">
       <strong>
         THREE
       </strong>
       <p class="no-margin-bottom justify">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
+      <span class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star-half-o"></i>
+      </span>
       <a href="#" class="pull-right">
         view more
       </a>
     </div>
-    <div class="column">
+    <div class="column cooperative">
       <strong>
         FOUR
       </strong>
       <p class="no-margin-bottom justify">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
       </p>
+      <span class="rating">
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+        <i class="fa fa-star"></i>
+      </span>
       <a href="#" class="pull-right">
         view more
       </a>
