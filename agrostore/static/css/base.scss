@@ -1,5 +1,10 @@
+$hero-color: #e32072;
+$title-font: 'Fira Sans', sans-serif;
+$main-font: 'Cantarell', sans-serif;
+$navigation-font: $title-font;
+
 body{
-  font-family: 'Cantarell', sans-serif;
+  font-family: $main-font;
 }
 
 .full-width{
@@ -28,15 +33,50 @@ body{
 }
 
 .spaced{
-  padding: 10rem 2.0rem;
+  padding: 12rem 2.0rem;
+}
+
+.hero-wrapper{
+  background: $hero-color;
+  color: white;
 }
 
 .hero{
   @extend .spaced;
+  margin-bottom: 4rem;
+  text-align: center;
+
+  .hero-title{
+  }
+
+  .hero-subtitle{
+    a{
+      color: darken(white, 5%);
+      text-decoration: underline;
+      &:hover{
+        color: darken(white, 20%);;
+      }
+    }
+  }
+
+  .hero-button{
+    background: darken($hero-color, 30%);
+    border: darken($hero-color, 30%);
+    &:hover{
+      background: darken($hero-color, 20%);
+    }
+  }
+
 }
 
 .cooperative{
+  color: darken($hero-color, 30%);
+
+  .cooperative-name{
+      text-transform: uppercase;
+  }
   .rating{
+    color: #F8CA00;
     width: 100%;
     clear: both;
     float: right;
@@ -47,8 +87,7 @@ body{
 nav.navigation{
   padding: 1.2rem 0;
   background: #f3f3f3;
-  border-bottom: 2px solid black;
-  font-family: 'Fira Sans', sans-serif;
+  font-family: $navigation-font;
 
   .navigation-list{
     float: right;
@@ -70,16 +109,22 @@ nav.navigation{
 
 .timeline{
   .timeline-item{
-    border: .1rem solid black;
-    border-radius: .4rem;
+    border: .2rem solid $hero-color;
 
     div{
       padding: 0.2rem 1rem;
       &.timeline-header{
-        border-bottom: .1rem solid black;
+        background: $hero-color;
+        color: white;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
       }
       &.timeline-footer{
-        border-top: .1rem solid black;
+        background: $hero-color;
+        color: white;
+        text-align: right;
       }
     }
 

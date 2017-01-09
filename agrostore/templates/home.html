@@ -3,30 +3,25 @@
 {% load static %}
 
 {% block content %}
-<section class="container hero" id="hero">
-  <div class="row">
-    <div class="column">
-      <h1>
-        AWESOME TEXT HERE
-      </h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      </p>
-      <p>
-        <a class="button" href="#">Goto action</a>
-      </p>
-    </div>
-    <div class="column column-50">
-      <img class="full-width" src="{% static 'img/main.svg' %}" />
-    </div>
-  </div>
-</section>
+<div class="hero-wrapper">
+  <section class="container hero" id="hero">
+    <h1 class="hero-title">
+      Compra frutas y verduras orgánicas
+    </h1>
+    <p class="hero-subtitle">
+      Y retiralas en un <a href="#">punto central</a>
+    </p>
+    <p>
+      <a class="button hero-button" href="#">Ver productos</a>
+    </p>
+  </section>
+</div>
 
 <section class="container" id="cooperatives">
   <div class="row">
     <div class="column cooperative">
-      <strong>
-        ONE
+      <strong class="cooperative-name">
+        Agrícola Jhon Doe
       </strong>
       <p class="no-margin-bottom justify">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -43,8 +38,8 @@
       </a>
     </div>
     <div class="column cooperative">
-      <strong>
-        TWO
+      <strong class="cooperative-name">
+        Juanito Perez y asociados
       </strong>
       <p class="no-margin-bottom justify">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -61,8 +56,8 @@
       </a>
     </div>
     <div class="column cooperative">
-      <strong>
-        THREE
+      <strong class="cooperative-name">
+        Sociedad Agro
       </strong>
       <p class="no-margin-bottom justify">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -79,8 +74,8 @@
       </a>
     </div>
     <div class="column cooperative">
-      <strong>
-        FOUR
+      <strong class="cooperative-name">
+        Cooperativa verde
       </strong>
       <p class="no-margin-bottom justify">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -103,24 +98,24 @@
   <div class="row spaced">
     <div class="column column-50 column-offset-25">
       <h4 class="center">
-        Timeline
+        Noticias
       </h4>
       <div class="timeline">
         <div class="timeline-item">
 
           <div class="timeline-header">
-            Product name
+            Nuevo punto central en providencia
           </div>
           <div class="timeline-content">
             <p class="no-margin-bottom">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Un nuevo punto estará disponible a partir del 9 de Enero de 2017 entre las avenidas andres bello y providencia.
             </p>
             <a href="#" class="button">
-              Button
+              Saber más
             </a>
           </div>
           <div class="timeline-footer">
-            Footer
+            Ayer a las 03:00 PM
           </div>
         </div>
       </div>
